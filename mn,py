@@ -1,0 +1,205 @@
+# PYTHON LIST ARREY 10 BODLOGO
+
+# task1
+# a = input()
+# b = a.split()
+# print(len(b))
+
+# task2
+# a = input()
+# b = a.split()
+# print(max(b, key=len))
+
+# task3
+# n = input()
+# m = "аэиоуөү"
+# f = 0
+# for i in n:
+#     if i.lower() in m:
+#         f += 1
+# print(f)
+
+# task4
+# n = input()
+# m = input()
+# print(n.split().count(m))
+
+# task5
+# n = input()
+# m = n.split()
+# m.sort()
+# print(" ".join(m))
+
+# task6
+# n = input().split()
+# for word in n:
+#     if word == word[::-1]:
+#         print(word, end=" ")
+
+# task7
+# n = input().split()
+# for word in n:
+#     print(word, len(word))
+
+# task8
+# n = input()
+# max = 0
+# vseg = "" 
+# for i in n:
+#     too = n.count(i)
+#     if too > max:
+#         max = too 
+#         vseg = i 
+# print(vseg, max)
+
+# task9
+# n = input().split()
+# m = []
+# for word in n:
+#     if word not in m:
+#         m.append(word)
+# print(*m)
+
+# task10
+# n = input().split()
+# max = 0
+# for i in n:
+#     m = i.split(":")
+#     t = int(m[1])
+#     if t > max:
+#         max = t 
+# for i in n:
+#     m = i.split(":")
+#     if int(m[1]) == max:
+#         print(m[0], max)
+
+
+
+
+#######################################################################################################333
+
+# 10 HVND BODLOGO
+
+# task1
+# n = input().split() 
+# n.sort(key=len, reverse=True) 
+# print(n[1])       
+
+# task2
+# n = input()
+# m = 0
+# while m < len(n):
+#     a = 1
+#     while m + 1 < len(n) and n[m] == n[ + 1]:
+#         a += 1
+#         m += 1
+#     print(n[m] + str(a), end="")
+#     m += 1
+
+# task3
+# n = input().split()
+# for i in n:
+#     print(i[::-1], end=" ")
+
+# task4
+# a = input()
+# b = a.split()
+# egshig_vseg = "аэиоу"
+# max = 0
+# hariult = "" 
+# for i in b:
+#     too = 0
+#     for j in i.lower():
+#         if j in egshig_vseg:
+#             too = too + 1
+#     if too > max:
+#         max = too
+#         hariult = i
+# print(hariult, max)
+
+# task5
+# n = input()
+# m = n.split()
+# f = m[0].lower()
+# g = m[1].lower()
+# if sorted(f) == sorted(g):
+#     print("yes")
+# else:
+#     print("no")
+
+# task6
+# n = input()
+# m = n.split()
+# for i in m:
+#     if m.index(i) == m.index(i):
+#         t = m.count(i)
+#         if t > 1:
+#             if m.index(i) == m.index(i):
+#                 print(i, t)
+
+# task7
+# a = input()
+# a = a.lower()
+# a = a.replace(" ", "")
+# if a == a[::-1]:
+#     print("yes")
+# else:
+#     print("no")
+
+# task8
+# n = input()
+# m = n.split()
+# for u in m:
+#     t = 0
+#     for r in u:
+#         if r.isdigit():
+#             t = t + 1
+#     if t > 0:
+#         print(u, t)
+
+# task9
+# m = input()
+# tom = 0
+# jijig = 0
+# too = 0
+# temdeg = 0
+# for y in m:
+#     if y.isupper():
+#         tom = 1
+#     if y.islower():
+#         jijig = 1
+#     if y.isdigit():
+#         too = 1
+#     if y in "@%$&*":
+#         temdeg = 1
+# if len(m) >= 8 and tom == 1 and jijig == 1 and too == 1 and temdeg == 1:
+#     print("strong")
+# else:
+#     print("weak")
+
+# task10
+a = input()
+b = a.split()
+ner = []
+dun = []
+for i in b: 
+    c = i.split(":")
+    ner.append((c[0]))
+    dvn.append(int(c[1]))
+print("highest:", end=" ")
+m = max(dvn)
+for i in range(len(dvn)):
+    if dvn[i] == m:
+        print(ner[i], end=" ")
+print()
+d = sum(dvn) / len(dvn)
+print("avarage:", round(d, 1))
+print("above avarage:", end=" ")
+for io in range(len(dvn)):
+    if dvn[i] > d:
+        print(ner[i], end=" ")
+print()
+print("failed:", end=" ")
+for i in range(len(dvn)):
+    if dvn[i] <60:
+        print(ner[i], end=" ")
